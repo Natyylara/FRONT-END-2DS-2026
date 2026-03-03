@@ -21,6 +21,48 @@
             margin: 0;
             padding: 0;
         }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .hamburguer 
+        {
+            display: none; /* Esconde o botão hamburguer por padrão */
+            font-size: 24px;
+            color: white;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 768px) {
+            .hamburguer 
+            {
+                display: block; /* Exibe o botão hamburguer em telas menores */
+            }
+
+            .nav-links 
+            {
+                display: none;
+                flex-direction: column; /* Exibe o menu verticalmente */
+                position: absolute;
+                top: 60px; /* Ajuste conforme necessário */
+                left: 0;
+                width: 100%;
+                background-color: black;
+                text-align: center;
+                padding: 20px 0;    
+            }
+
+            /* Classe que será adicionada ao javaascript para mostrar o menu */
+            .nav-links.active {
+                display: flex;
+            }
+        }
+
     </style>
 
 </head>
@@ -56,6 +98,11 @@
         <h1>Conteúdo da página</h1>
         <p>Redimensione a janela do navegador para ver o menu mudar.</p>
     </div>
+    <a href="" style="text-decoration: none; color: red;">qualquer coisa</a>
+
+    <script>
+        alert("Anjos sem paciência!!!")
+    </script>
     
 </body>
 </html>
