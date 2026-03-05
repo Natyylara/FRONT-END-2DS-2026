@@ -101,7 +101,20 @@
     <a href="" style="text-decoration: none; color: red;">qualquer coisa</a>
 
     <script>
-        alert("Anjos sem paciência!!!")
+       // SELECIONA OS ELEMENTOS DE HTML
+
+       const hamburguerBtn = document.getElementById('hamburguer-btnx');
+       const navLinks = document.getElementById('nav-links');
+
+
+       // ADICIONA UM EVENTO AO BOTÃO DE CLICK
+
+         hamburguerBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');{
+                    display: flex;
+                }
+
+         })
     </script>
     
 </body>
