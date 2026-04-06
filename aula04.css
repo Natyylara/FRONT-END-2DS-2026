@@ -28,6 +28,7 @@ body{
     transition: transform 0.3s ease;
     border-style: groove;
     border-color: #070447;
+
     img {
         border-color: #1a108b;
         border-style: dashed;
